@@ -22,26 +22,26 @@ function checkInput() {
     const password2Value = password2.value.trim();
 
     if (usernameValue === '') {
-        showError(username, "Username can't be blank");
+        showError(username, "Username can not be blank");
     } else if (!isUsernameValid(usernameValue)) {
         showError(username, "Username can have small letters and underscores only");
     } else {
         showSuccess(username);
     }
     if (emailValue === '') {
-        showError(email, "Email Id can't be blank");
+        showError(email, "Email Id can not be blank");
     } else if (!isEmailValid(emailValue)) {
         showError(email, "Email Id is in valid");
     } else {
         showSuccess(email);
     }
     if (password1Value === '') {
-        showError(password1, "Password can't be blank");
+        showError(password1, "Password1 can not be blank");
     } else {
         showSuccess(password1);
     }
     if (password2Value === '') {
-        showError(password2, "Re-enter password");
+        showError(password2, "Password2 can not be blank");
     } else if (password2Value != password1Value) {
         showError(password2, "Password not matched!")
     } else {
